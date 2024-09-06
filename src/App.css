@@ -1,0 +1,133 @@
+/* TodoApp.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #fff;
+  padding: 0 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.App-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  padding: 20px 0;
+}
+
+input[type="text"] {
+  width: calc(100% - 90px);
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  outline: none;
+}input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background-color: rgb(24, 50, 6);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  opacity: 0.95;
+}
+
+button:hover {
+  opacity: 1;
+}
+.delete {
+  background-color: #f44336;
+}
+.edit {
+  background-color: #38ad67;
+}
+.completed {
+  background-color: #8c8c8c;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+li span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+li input[type="text"] {
+  width: 60%;
+  padding: 6px;
+  margin-right: 10px;
+}
+
+li button {
+  margin-left: 5px;
+}
+
+li button.complete {
+  background-color: #28a745;
+}
+
+li button.complete:hover {
+  background-color: #218838;
+}
+
+li button.delete {
+  background-color: #dc3545;
+}
+
+li button.delete:hover {
+  background-color: #c82333;
+}
+
+.search-input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 20px 0;
+  outline: none;
+}
